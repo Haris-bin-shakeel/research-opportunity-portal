@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+		"name": "Research Opportunity Portal",
+		"description": "API collection for testing the Research Opportunity Portal backend. Includes all CRUD operations with sample data.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. Create Opportunity - ML Healthcare",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Machine Learning for Healthcare\",\n    \"description\": \"Research on applying ML techniques to predict patient outcomes using hospital data.\",\n    \"research_area\": \"Artificial Intelligence\",\n    \"faculty_name\": \"Dr. Ahmed Khan\",\n    \"department\": \"Computer Science\",\n    \"required_skills\": \"Python, TensorFlow, Data Analysis\",\n    \"positions\": 3,\n    \"deadline\": \"2026-12-15\",\n    \"status\": \"Open\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/opportunities",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["api", "opportunities"]
+				}
+			}
+		},
+		{
+			"name": "2. Create Opportunity - IoT Smart Campus",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"IoT Based Smart Campus\",\n    \"description\": \"Developing an IoT network for monitoring energy usage across campus buildings.\",\n    \"research_area\": \"Internet of Things\",\n    \"faculty_name\": \"Dr. Sara Ali\",\n    \"department\": \"Electrical Engineering\",\n    \"required_skills\": \"Arduino, Raspberry Pi, Networking\",\n    \"positions\": 2,\n    \"deadline\": \"2026-11-30\",\n    \"status\": \"Open\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/opportunities",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["api", "opportunities"]
+				}
+			}
+		},
+		{
+			"name": "3. Create Opportunity - Blockchain Supply Chain",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Blockchain in Supply Chain\",\n    \"description\": \"Exploring blockchain technology for transparent and secure supply chain management.\",\n    \"research_area\": \"Blockchain\",\n    \"faculty_name\": \"Dr. Faisal Mahmood\",\n    \"department\": \"Computer Science\",\n    \"required_skills\": \"Solidity, JavaScript, Cryptography\",\n    \"positions\": 2,\n    \"deadline\": \"2026-12-01\",\n    \"status\": \"Open\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/opportunities",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["api", "opportunities"]
+				}
+			}
+		},
+		{
+			"name": "4. Get All Opportunities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/opportunities",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["api", "opportunities"]
+				}
+			}
+		},
+		{
+			"name": "5. Get One Opportunity by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/opportunities/1",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["api", "opportunities", "1"]
+				}
+			}
+		},
+		{
+			"name": "6. Update Opportunity",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Machine Learning for Healthcare - Updated\",\n    \"description\": \"Updated: Research on applying ML and Deep Learning techniques to predict patient outcomes.\",\n    \"research_area\": \"Artificial Intelligence\",\n    \"faculty_name\": \"Dr. Ahmed Khan\",\n    \"department\": \"Computer Science\",\n    \"required_skills\": \"Python, TensorFlow, PyTorch, Data Analysis\",\n    \"positions\": 5,\n    \"deadline\": \"2027-01-15\",\n    \"status\": \"Open\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/opportunities/1",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["api", "opportunities", "1"]
+				}
+			}
+		},
+		{
+			"name": "7. Change Status to Closed",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"IoT Based Smart Campus\",\n    \"description\": \"Developing an IoT network for monitoring energy usage across campus buildings.\",\n    \"research_area\": \"Internet of Things\",\n    \"faculty_name\": \"Dr. Sara Ali\",\n    \"department\": \"Electrical Engineering\",\n    \"required_skills\": \"Arduino, Raspberry Pi, Networking\",\n    \"positions\": 2,\n    \"deadline\": \"2026-11-30\",\n    \"status\": \"Closed\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/opportunities/2",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["api", "opportunities", "2"]
+				}
+			}
+		},
+		{
+			"name": "8. Delete Opportunity",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/opportunities/3",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["api", "opportunities", "3"]
+				}
+			}
+		},
+		{
+			"name": "9. Get Deleted Opportunity (404 Test)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/opportunities/3",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["api", "opportunities", "3"]
+				}
+			}
+		},
+		{
+			"name": "10. Invalid Request (Missing Fields - 400 Test)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Incomplete Opportunity\",\n    \"description\": \"\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/opportunities",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["api", "opportunities"]
+				}
+			}
+		}
+	]
+}
