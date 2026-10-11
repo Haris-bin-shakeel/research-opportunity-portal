@@ -6,6 +6,12 @@ A web-based application for managing research opportunities at the university. F
 
 GitHub Repository: https://github.com/Haris-bin-shakeel/research-opportunity-portal
 
+## Demo Video
+
+Demo Video: https://drive.google.com/file/d/YOUR_VIDEO_LINK_HERE
+
+*(Upload your demo video to Google Drive and replace the link above)*
+
 ## Technologies Used
 
 - **Backend:** Node.js with Express.js
