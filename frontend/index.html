@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Opportunity Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="header-container">
+            <h1>🔬 Research Opportunity Portal</h1>
+            <p>University Research Management System</p>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container">
+
+        <!-- Success/Error Message Area -->
+        <div id="messageBox" class="message-box" style="display: none;"></div>
+
+        <!-- Button to show the create form -->
+        <div class="action-bar">
+            <button id="showFormBtn" class="btn btn-primary" onclick="toggleCreateForm()">+ Add New Opportunity</button>
+        </div>
+
+        <!-- Create / Edit Form (hidden by default) -->
+        <div id="formSection" class="form-section" style="display: none;">
+            <h2 id="formTitle">Create New Research Opportunity</h2>
+            <form id="opportunityForm" onsubmit="handleFormSubmit(event)">
+                <input type="hidden" id="editId" value="">
+
+                <div class="form-group">
+                    <label for="title">Research Title *</label>
+                    <input type="text" id="title" name="title" placeholder="e.g. Machine Learning for Healthcare" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description *</label>
+                    <textarea id="description" name="description" rows="3" placeholder="Describe the research opportunity..." required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="research_area">Research Area *</label>
+                        <input type="text" id="research_area" name="research_area" placeholder="e.g. Artificial Intelligence" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="faculty_name">Faculty Name *</label>
+                        <input type="text" id="faculty_name" name="faculty_name" placeholder="e.g. Dr. Ahmed Khan" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="department">Department *</label>
+                        <input type="text" id="department" name="department" placeholder="e.g. Computer Science" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="required_skills">Required Skills *</label>
+                        <input type="text" id="required_skills" name="required_skills" placeholder="e.g. Python, TensorFlow" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="positions">Available Positions *</label>
+                        <input type="number" id="positions" name="positions" min="1" placeholder="e.g. 3" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="deadline">Application Deadline *</label>
+                        <input type="date" id="deadline" name="deadline" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <select id="status" name="status">
+                        <option value="Open">Open</option>
+                        <option value="Closed">Closed</option>
+                    </select>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Create Opportunity</button>
+                    <button type="button" class="btn btn-secondary" onclick="cancelForm()">Cancel</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Opportunities List -->
+        <div id="opportunitiesList" class="opportunities-list">
+            <h2>All Research Opportunities</h2>
+            <div id="cardsContainer">
+                <!-- opportunity cards will be loaded here by JS -->
+                <p class="loading-text">Loading opportunities...</p>
+            </div>
+        </div>
+
+        <!-- Detail View Modal -->
+        <div id="detailModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <div id="detailContent">
+                    <!-- details will be shown here -->
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 University Research Opportunity Portal | FAST NUCES Peshawar</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
