@@ -8,9 +8,7 @@ GitHub Repository: https://github.com/Haris-bin-shakeel/research-opportunity-por
 
 ## Demo Video
 
-Demo Video: https://drive.google.com/file/d/YOUR_VIDEO_LINK_HERE
-
-*(Upload your demo video to Google Drive and replace the link above)*
+Demo Video: https://drive.google.com/file/d/1fkidkHOVr7vVjHQJYoWI9CNIOZTNIzRU/view?usp=drive_link
 
 ## Technologies Used
 

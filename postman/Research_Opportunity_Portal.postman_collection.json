@@ -23,9 +23,14 @@
 				"url": {
 					"raw": "http://localhost:3000/api/opportunities",
 					"protocol": "http",
-					"host": ["localhost"],
+					"host": [
+						"localhost"
+					],
 					"port": "3000",
-					"path": ["api", "opportunities"]
+					"path": [
+						"api",
+						"opportunities"
+					]
 				}
 			}
 		},
@@ -46,9 +51,14 @@
 				"url": {
 					"raw": "http://localhost:3000/api/opportunities",
 					"protocol": "http",
-					"host": ["localhost"],
+					"host": [
+						"localhost"
+					],
 					"port": "3000",
-					"path": ["api", "opportunities"]
+					"path": [
+						"api",
+						"opportunities"
+					]
 				}
 			}
 		},
@@ -69,9 +79,14 @@
 				"url": {
 					"raw": "http://localhost:3000/api/opportunities",
 					"protocol": "http",
-					"host": ["localhost"],
+					"host": [
+						"localhost"
+					],
 					"port": "3000",
-					"path": ["api", "opportunities"]
+					"path": [
+						"api",
+						"opportunities"
+					]
 				}
 			}
 		},
@@ -83,9 +98,14 @@
 				"url": {
 					"raw": "http://localhost:3000/api/opportunities",
 					"protocol": "http",
-					"host": ["localhost"],
+					"host": [
+						"localhost"
+					],
 					"port": "3000",
-					"path": ["api", "opportunities"]
+					"path": [
+						"api",
+						"opportunities"
+					]
 				}
 			}
 		},
@@ -97,9 +117,15 @@
 				"url": {
 					"raw": "http://localhost:3000/api/opportunities/1",
 					"protocol": "http",
-					"host": ["localhost"],
+					"host": [
+						"localhost"
+					],
 					"port": "3000",
-					"path": ["api", "opportunities", "1"]
+					"path": [
+						"api",
+						"opportunities",
+						"1"
+					]
 				}
 			}
 		},
@@ -120,9 +146,15 @@
 				"url": {
 					"raw": "http://localhost:3000/api/opportunities/1",
 					"protocol": "http",
-					"host": ["localhost"],
+					"host": [
+						"localhost"
+					],
 					"port": "3000",
-					"path": ["api", "opportunities", "1"]
+					"path": [
+						"api",
+						"opportunities",
+						"1"
+					]
 				}
 			}
 		},
@@ -143,9 +175,15 @@
 				"url": {
 					"raw": "http://localhost:3000/api/opportunities/2",
 					"protocol": "http",
-					"host": ["localhost"],
+					"host": [
+						"localhost"
+					],
 					"port": "3000",
-					"path": ["api", "opportunities", "2"]
+					"path": [
+						"api",
+						"opportunities",
+						"2"
+					]
 				}
 			}
 		},
@@ -157,9 +195,15 @@
 				"url": {
 					"raw": "http://localhost:3000/api/opportunities/3",
 					"protocol": "http",
-					"host": ["localhost"],
+					"host": [
+						"localhost"
+					],
 					"port": "3000",
-					"path": ["api", "opportunities", "3"]
+					"path": [
+						"api",
+						"opportunities",
+						"3"
+					]
 				}
 			}
 		},
@@ -171,9 +215,15 @@
 				"url": {
 					"raw": "http://localhost:3000/api/opportunities/3",
 					"protocol": "http",
-					"host": ["localhost"],
+					"host": [
+						"localhost"
+					],
 					"port": "3000",
-					"path": ["api", "opportunities", "3"]
+					"path": [
+						"api",
+						"opportunities",
+						"3"
+					]
 				}
 			}
 		},
@@ -194,9 +244,14 @@
 				"url": {
 					"raw": "http://localhost:3000/api/opportunities",
 					"protocol": "http",
-					"host": ["localhost"],
+					"host": [
+						"localhost"
+					],
 					"port": "3000",
-					"path": ["api", "opportunities"]
+					"path": [
+						"api",
+						"opportunities"
+					]
 				}
 			}
 		}
